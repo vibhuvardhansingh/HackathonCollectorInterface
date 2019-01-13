@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+
+    <fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="0dp"
+        map:layout_constraintBottom_toBottomOf="parent"
+        map:layout_constraintEnd_toEndOf="parent"
+        map:layout_constraintStart_toStartOf="parent"
+        map:layout_constraintTop_toTopOf="parent"
+        tools:context=".MapsActivityUser" />
+
+    <TextView
+        android:id="@+id/tv_username"
+        android:layout_width="123dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="28dp"
+        android:background="@drawable/rectangle_2"
+        android:hint="User Name"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="20sp"
+        map:layout_constraintStart_toEndOf="@+id/textView"
+        map:layout_constraintTop_toTopOf="@+id/map" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="131dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="28dp"
+        android:background="@drawable/rectangle_2"
+        android:text="Welcome"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="20sp"
+        map:layout_constraintStart_toStartOf="parent"
+        map:layout_constraintTop_toTopOf="@+id/map" />
+
+
+
+    <Button
+        android:id="@+id/btn_throw"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="12dp"
+        android:background="@drawable/oval"
+        android:text="THROW"
+        android:visibility="gone"
+        map:layout_constraintEnd_toEndOf="parent"
+        map:layout_constraintStart_toStartOf="parent" />
+    <TextView
+        android:id="@+id/shashwat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"/>
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="560dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/noun_next_196291"
+        map:layout_constraintEnd_toEndOf="parent"
+        map:layout_constraintHorizontal_bias="0.498"
+        map:layout_constraintStart_toStartOf="parent"
+        map:layout_constraintTop_toTopOf="@+id/tv_username" />
+
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="38dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/rectangle_5"
+        android:text="Start Route"
+        android:textColor="#ffffff"
+        android:textSize="20sp"
+        map:layout_constraintBottom_toBottomOf="parent"
+        map:layout_constraintEnd_toEndOf="parent"
+        map:layout_constraintHorizontal_bias="0.498"
+        map:layout_constraintStart_toStartOf="parent"
+        map:layout_constraintTop_toBottomOf="@+id/button2"
+        map:layout_constraintVertical_bias="0.2" />
+</android.support.constraint.ConstraintLayout>

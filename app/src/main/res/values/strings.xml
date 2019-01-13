@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">HackathonCollector</string>
+    <string name="title_activity_maps_collector">Map</string>
+    <string name="loading">Loading....</string>
+</resources>
